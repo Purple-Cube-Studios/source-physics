@@ -29,7 +29,7 @@ $Configuration	"Debug"
 
 	$Compiler
 	{
-		$AdditionalIncludeDirectories		"$BASE;$SRCDIR\ivp\havana\havok;$SRCDIR\ivp\havana"
+		$AdditionalIncludeDirectories		"$BASE;$SRCDIR\ivp\havana\havok;$SRCDIR\ivp\havana;$SRCDIR\ivp\ivp_utility"
         $PreprocessorDefinitions			"$BASE;VPHYSICS_EXPORTS;HAVANA_CONSTRAINTS;HAVOK_MOPP;_DEBUG;_LIB;HK_DEBUG"
 		$Create/UsePrecompiledHeader		"Use Precompiled Header (/Yu)"
 		$Create/UsePCHThroughFile			"hk_math/vecmath.h"
@@ -48,6 +48,7 @@ $Configuration	"Debug"
 
 	$Compiler [$WIN32]
 	{
+		$TreatWarningsAsErrors				"No (/WX-)"
 		$PrecompiledHeaderFile				"$SRCDIR\ivp\obj\x86_debug\hk_math\hk_math.pch"
 		$ASMListLocation					"$SRCDIR\ivp\obj\x86_debug\hk_math\"
 		$ObjectFileName						"$SRCDIR\ivp\obj\x86_debug\hk_math\"
@@ -84,7 +85,7 @@ $Configuration	"Release"
 
 	$Compiler
 	{
-		$AdditionalIncludeDirectories		"$BASE;$SRCDIR\ivp\havana\havok;$SRCDIR\ivp\havana"
+		$AdditionalIncludeDirectories		"$BASE;$SRCDIR\ivp\havana\havok;$SRCDIR\ivp\havana;$SRCDIR\ivp\ivp_utility"
 		$PreprocessorDefinitions			"$BASE;VPHYSICS_EXPORTS;HAVANA_CONSTRAINTS;HAVOK_MOPP"
 		$Create/UsePrecompiledHeader		"Use Precompiled Header (/Yu)"
 		$Create/UsePCHThroughFile			"hk_math/vecmath.h"
@@ -98,6 +99,7 @@ $Configuration	"Release"
 
 	$Compiler [$WIN32]
 	{
+		$TreatWarningsAsErrors				"No (/WX-)"
 		$PrecompiledHeaderFile				"$SRCDIR\ivp\obj\x86_release\hk_math\hk_math.pch"
 		$ASMListLocation					"$SRCDIR\ivp\obj\x86_release\hk_math\"
 		$ObjectFileName						"$SRCDIR\ivp\obj\x86_release\hk_math\"

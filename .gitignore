@@ -1,0 +1,7 @@
+# Stuff to not upload while working in src
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxproj.vpc_crc
+*.vpc.sentinel
+obj/
